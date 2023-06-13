@@ -13,6 +13,12 @@ if (!defined('YOURLS_ABSPATH')) die();
 
 yourls_add_action('require_auth', 'my_checks');
 
+// Compatible with php7.x
+if (!function_exists('str_starts_with')) {
+    function str_starts_with($haystack, $needle) {
+        return (string)$needle !== '' && strncmp($haystack, $needle, strlen($needle)) === 0;
+    }
+}
 
 function get_default_i18ns()
 {
@@ -52,6 +58,7 @@ function get_default_i18ns()
 	}
 	return $i18n[$lang];
 }
+
 function my_checks()
 {
 	if (str_starts_with($_SERVER['PHP_SELF'], parse_url(yourls_admin_url())['path']) || yourls_get_option('tao_isEnable') == "false") return;
@@ -84,8 +91,8 @@ HTML;
 	die(1);
 }
 
-
 yourls_add_action('plugins_loaded', 'add_page');
+
 function add_page()
 {
 	yourls_register_plugin_page('blocker_page', get_default_i18ns()['setting_page'], 'do_page');
@@ -101,7 +108,6 @@ function do_page()
 	build_page();
 }
 
-
 function update_option()
 {
 	yourls_update_option('tao_isEnable', $_POST['tao_isEnable']);
@@ -110,12 +116,10 @@ function update_option()
 	yourls_update_option('tao_custom_js', $_POST['tao_custom_js']);
 }
 
-
 function check_option($name, $id)
 {
 	return  yourls_get_option($name) ? yourls_get_option($name) : get_default_i18ns()[$id];
 }
-
 
 function build_page()
 {
