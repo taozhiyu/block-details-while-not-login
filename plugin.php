@@ -104,7 +104,6 @@ function do_page()
 
 function update_option()
 {
-	var_dump($_POST);
 	yourls_update_option('tao_isEnable', $_POST['tao_isEnable']);
 	yourls_update_option('tao_custom_title', $_POST['tao_custom_title']);
 	yourls_update_option('tao_custom_msg', $_POST['tao_custom_msg']);
@@ -122,7 +121,6 @@ function build_page()
 {
 	$default_i18ns = get_default_i18ns();
 	$isEnable = yourls_get_option('tao_isEnable') === 'true' ? true : false;
-	var_dump($isEnable);
 	$e1 = $isEnable ? 'checked' : '';
 	$e2 = !$isEnable ? 'checked' : '';
 	$custom_title = check_option('tao_custom_title', 'denied');
