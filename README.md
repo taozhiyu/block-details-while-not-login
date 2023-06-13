@@ -1,7 +1,3 @@
-<span style="font-size:30px">此插件暂时有问题，请勿下载<br>This plugin is temporarily faulty, please do not download</span>
-<hr>
-
-
 # block-details-while-not-login | 未登录时屏蔽详情页
 a plugin for [YOURLS](https://yourls.org/), block details page while not login
 

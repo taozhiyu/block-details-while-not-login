@@ -3,7 +3,7 @@
 Plugin Name: block-details-while-not-login
 Plugin URI: https://github.com/taozhiyu/block-details-while-not-login
 Description: block details page while not login
-Version: 1.0
+Version: 1.1
 Author: taozhiyu
 Author URI: https://github.com/taozhiyu
 */
@@ -61,7 +61,9 @@ function get_default_i18ns()
 
 function my_checks()
 {
-	if (str_starts_with($_SERVER['PHP_SELF'], parse_url(yourls_admin_url())['path']) || yourls_get_option('tao_isEnable') == "false") return;
+	if(!is_string(yourls_is_valid_user()))return;
+	if(yourls_get_option('tao_isEnable') == "false")return;
+	if (str_starts_with($_SERVER['PHP_SELF'], parse_url(yourls_admin_url())['path'])) return;
 	$title = check_option('tao_custom_title', 'denied');
 	$message = check_option('tao_custom_msg', 'no_permission');
 	$header_code = 403;
