@@ -3,7 +3,7 @@
 Plugin Name: block-details-while-not-login
 Plugin URI: https://github.com/taozhiyu/block-details-while-not-login
 Description: block details page while not login
-Version: 1.1
+Version: 1.2
 Author: taozhiyu
 Author URI: https://github.com/taozhiyu
 */
