@@ -1,0 +1,109 @@
+# Simplified Chinese translation for block-details-while-not-login.
+# Copyright (C) taozhiyu and contributors
+# This file is distributed under the GPL-3.0 license.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: block-details-while-not-login 2.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/taozhiyu/block-details-while-not-login/issues\n"
+"POT-Creation-Date: 2026-04-28 00:00+0000\n"
+"PO-Revision-Date: 2026-04-28 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Simplified Chinese <zh_CN@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: yourls__;yourls_e;yourls_s;yourls_se;yourls_esc_attr__;yourls_esc_html__;yourls_x;yourls_ex;yourls_esc_attr_x;yourls_esc_html_x;yourls_n:1,2;yourls_nx:1,2;yourls_n_noop:1,2;yourls_nx_noop:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: plugin.php
+msgid "Access Denied"
+msgstr "禁止访问"
+
+#: plugin.php
+msgid "You do not have permission to access this page."
+msgstr "您无权访问此页面。"
+
+#: plugin.php
+msgid "Redirecting in %s seconds…"
+msgstr "%s 秒后重定向…"
+
+#: plugin.php
+msgid "Block Page Configuration"
+msgstr "屏蔽页面配置"
+
+#: plugin.php
+msgid "Enable blocking"
+msgstr "启用屏蔽"
+
+#: plugin.php
+msgid "HTTP status code"
+msgstr "HTTP 状态码"
+
+#: plugin.php
+msgid "Display title"
+msgstr "显示标题"
+
+#: plugin.php
+msgid "Display message"
+msgstr "显示消息"
+
+#: plugin.php
+msgid "Show YOURLS branding header"
+msgstr "显示 YOURLS 品牌头部"
+
+#: plugin.php
+msgid "Redirect (optional)"
+msgstr "重定向（可选）"
+
+#: plugin.php
+msgid "Redirect URL"
+msgstr "重定向 URL"
+
+#: plugin.php
+msgid "Delay (seconds)"
+msgstr "延迟（秒）"
+
+#: plugin.php
+msgid "If set with delay 0, guests are redirected immediately. With a delay, the message is shown first."
+msgstr "若延迟为 0，访客将立即跳转；非零时先显示消息再跳转。"
+
+#: plugin.php
+msgid "Advanced"
+msgstr "高级"
+
+#: plugin.php
+msgid "Inject JavaScript"
+msgstr "注入 JavaScript"
+
+#: plugin.php
+msgid "Wrapped in an IIFE on render. Trusted, admin-supplied code only."
+msgstr "渲染时被包裹在 IIFE 中。仅限管理员提供的可信代码。"
+
+#: plugin.php
+msgid "Save changes"
+msgstr "保存更改"
+
+#: plugin.php
+msgid "Reset to defaults"
+msgstr "恢复默认值"
+
+#: plugin.php
+msgid "Reset all settings to defaults?"
+msgstr "确定要将所有设置恢复为默认值？"
+
+#: plugin.php
+msgid "Settings saved."
+msgstr "设置已保存。"
+
+#: plugin.php
+msgid "Settings reset to defaults."
+msgstr "已恢复默认设置。"
+
+#. translators: %1$s/%2$s wrap inline code (<code></code>); %3$s/%4$s wrap a link to YOURLS PR #2747.
+#: plugin.php
+msgid "Tip: also rename the %1$s/admin/%2$s directory and create a %1$suser/cache.php%2$s filter to mask the admin URL — see %3$sYOURLS PR #2747%4$s."
+msgstr "建议：同时重命名 %1$s/admin/%2$s 目录并创建 %1$suser/cache.php%2$s 过滤器以掩盖后台地址——参见 %3$sYOURLS PR #2747%4$s。"

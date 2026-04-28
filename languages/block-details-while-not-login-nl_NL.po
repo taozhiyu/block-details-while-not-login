@@ -1,0 +1,109 @@
+# Dutch (Netherlands) translation for block-details-while-not-login.
+# Copyright (C) taozhiyu and contributors
+# This file is distributed under the GPL-3.0 license.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: block-details-while-not-login 2.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/taozhiyu/block-details-while-not-login/issues\n"
+"POT-Creation-Date: 2026-04-28 00:00+0000\n"
+"PO-Revision-Date: 2026-04-28 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Dutch <nl@li.org>\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: yourls__;yourls_e;yourls_s;yourls_se;yourls_esc_attr__;yourls_esc_html__;yourls_x;yourls_ex;yourls_esc_attr_x;yourls_esc_html_x;yourls_n:1,2;yourls_nx:1,2;yourls_n_noop:1,2;yourls_nx_noop:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: plugin.php
+msgid "Access Denied"
+msgstr "Toegang geweigerd"
+
+#: plugin.php
+msgid "You do not have permission to access this page."
+msgstr "U bent niet bevoegd om deze pagina te bekijken."
+
+#: plugin.php
+msgid "Redirecting in %s seconds…"
+msgstr "Over %s seconden wordt u doorgestuurd…"
+
+#: plugin.php
+msgid "Block Page Configuration"
+msgstr "Configuratie blokkadepagina"
+
+#: plugin.php
+msgid "Enable blocking"
+msgstr "Blokkering inschakelen"
+
+#: plugin.php
+msgid "HTTP status code"
+msgstr "HTTP-statuscode"
+
+#: plugin.php
+msgid "Display title"
+msgstr "Weergegeven titel"
+
+#: plugin.php
+msgid "Display message"
+msgstr "Weergegeven bericht"
+
+#: plugin.php
+msgid "Show YOURLS branding header"
+msgstr "YOURLS-koptekst weergeven"
+
+#: plugin.php
+msgid "Redirect (optional)"
+msgstr "Doorverwijzing (optioneel)"
+
+#: plugin.php
+msgid "Redirect URL"
+msgstr "Doorverwijzings-URL"
+
+#: plugin.php
+msgid "Delay (seconds)"
+msgstr "Vertraging (seconden)"
+
+#: plugin.php
+msgid "If set with delay 0, guests are redirected immediately. With a delay, the message is shown first."
+msgstr "Met een vertraging van 0 wordt de bezoeker direct doorgestuurd. Bij een hogere waarde verschijnt eerst de boodschap."
+
+#: plugin.php
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+#: plugin.php
+msgid "Inject JavaScript"
+msgstr "JavaScript injecteren"
+
+#: plugin.php
+msgid "Wrapped in an IIFE on render. Trusted, admin-supplied code only."
+msgstr "Wordt bij weergave omsloten door een IIFE. Uitsluitend voor vertrouwde, door beheerders aangeleverde code."
+
+#: plugin.php
+msgid "Save changes"
+msgstr "Wijzigingen opslaan"
+
+#: plugin.php
+msgid "Reset to defaults"
+msgstr "Standaardwaarden herstellen"
+
+#: plugin.php
+msgid "Reset all settings to defaults?"
+msgstr "Weet u zeker dat u alle instellingen naar de standaardwaarden wilt herstellen?"
+
+#: plugin.php
+msgid "Settings saved."
+msgstr "Instellingen opgeslagen."
+
+#: plugin.php
+msgid "Settings reset to defaults."
+msgstr "Standaardinstellingen hersteld."
+
+#. translators: %1$s/%2$s wrap inline code (<code></code>); %3$s/%4$s wrap a link to YOURLS PR #2747.
+#: plugin.php
+msgid "Tip: also rename the %1$s/admin/%2$s directory and create a %1$suser/cache.php%2$s filter to mask the admin URL — see %3$sYOURLS PR #2747%4$s."
+msgstr "Tip: hernoem daarnaast de %1$s/admin/%2$s-map en maak een %1$suser/cache.php%2$s-filter om de admin-URL te maskeren — zie %3$sYOURLS PR #2747%4$s."
