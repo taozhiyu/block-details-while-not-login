@@ -61,9 +61,11 @@ function get_default_i18ns()
 
 function my_checks()
 {
-	if(!is_string(yourls_is_valid_user()))return;
-	if(yourls_get_option('tao_isEnable') == "false")return;
+	// FIX: login break.
 	if (str_starts_with($_SERVER['PHP_SELF'], parse_url(yourls_admin_url())['path'])) return;
+
+	if(yourls_get_option('tao_isEnable') == "false")return;
+	if(!is_string(yourls_is_valid_user()))return;
 	$title = check_option('tao_custom_title', 'denied');
 	$message = check_option('tao_custom_msg', 'no_permission');
 	$header_code = 403;
